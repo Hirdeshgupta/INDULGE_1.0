@@ -1,0 +1,1 @@
+create a new .env.local file and copy paste the credentials
