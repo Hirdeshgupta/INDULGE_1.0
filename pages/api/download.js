@@ -3,7 +3,7 @@ import pdfHelper from "../../helpers/pdfHelper";
 
 export default async function handler(req, res) {
   const buffer = await pdfHelper.componentToPDFBuffer(
-    <PdfForm data={"Data from api calls"} />
+    <PdfForm data={("Data from api calls", process.env.GDTYPE)} />
   );
 
   // with this header, your browser will prompt you to download the file
