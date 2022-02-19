@@ -8,7 +8,6 @@ export default function Login() {
   const [emailLogin, setEmailLogin] = useState("");
   const [passwordLogin, setPasswordLogin] = useState("");
   useEffect(() => {
-    alert("I m in	");
     let switchCtn = document.querySelector("#switch-cnt");
     let switchC1 = document.querySelector("#switch-c1");
     let switchC2 = document.querySelector("#switch-c2");

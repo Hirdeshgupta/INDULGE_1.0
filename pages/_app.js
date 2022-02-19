@@ -25,7 +25,6 @@ import PageChange from "components/PageChange/PageChange.js";
 
 import "assets/css/nextjs-material-dashboard.css?v=1.1.0";
 
-
 export default class MyApp extends App {
   componentDidMount() {
     let comment = document.createComment(`
@@ -58,7 +57,6 @@ export default class MyApp extends App {
   }
   render() {
     const { Component, pageProps } = this.props;
-
     const Layout = Component.layout || (({ children }) => <>{children}</>);
 
     return (
