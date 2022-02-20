@@ -6,7 +6,7 @@ const mongoose = require("mongoose"),
  * User Schema
  */
 const UserSchema = new Schema({
-  fullName: {
+  userName: {
     type: String,
     trim: true,
     required: true,
@@ -20,6 +20,10 @@ const UserSchema = new Schema({
   },
   hash_password: {
     type: String,
+  },
+  confirmationCode: {
+    type: String,
+    unique: true,
   },
   created: {
     type: Date,

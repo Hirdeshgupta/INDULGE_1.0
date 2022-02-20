@@ -1,8 +1,8 @@
 import React, { Component, useEffect, useState } from "react";
 import "./../assets/css/login.css";
 export default function Login() {
-  const [userName, setUserName] = useState("Hirdesh");
-  const [emailRegister, setEmailRegister] = useState("abc@gmail.com");
+  const [userName, setUserName] = useState("");
+  const [emailRegister, setEmailRegister] = useState("");
   const [passwordRegister, setPasswordRegister] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [emailLogin, setEmailLogin] = useState("");
