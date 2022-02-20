@@ -11,7 +11,7 @@ import Footer from "components/Footer/Footer.js";
 import Sidebar from "components/Sidebar/Sidebar.js";
 import FixedPlugin from "components/FixedPlugin/FixedPlugin.js";
 
-import routes from "routes.js";
+import adminRoutes from "../routes/adminRoutes";
 
 import styles from "assets/jss/nextjs-material-dashboard/layouts/adminStyle.js";
 
@@ -78,7 +78,7 @@ export default function Admin({ children, ...rest }) {
   return (
     <div className={classes.wrapper}>
       <Sidebar
-        routes={routes}
+        routes={adminRoutes}
         logoText={"Creative Tim"}
         logo={logo}
         image={image}
@@ -89,7 +89,7 @@ export default function Admin({ children, ...rest }) {
       />
       <div className={classes.mainPanel} ref={mainPanel}>
         <Navbar
-          routes={routes}
+          routes={adminRoutes}
           handleDrawerToggle={handleDrawerToggle}
           {...rest}
         />
