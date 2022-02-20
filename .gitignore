@@ -12,6 +12,7 @@
 # npmjs
 /dist
 
+.env.local
 # misc
 .DS_Store
 /environments/local/.env.local
