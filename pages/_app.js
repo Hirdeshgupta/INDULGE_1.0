@@ -28,7 +28,6 @@ import connectDb from "./api/controllers/connectDb";
 
 export default class MyApp extends App {
   componentDidMount() {
-    connectDb();
     let comment = document.createComment(`
 
 =========================================================

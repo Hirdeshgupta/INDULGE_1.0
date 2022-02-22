@@ -1,7 +1,10 @@
 import mongoose from "mongoose";
 
 const connectDB = async (handler) => {
-  if (mongoose.connections[0].readyState) {
+  if (
+    mongoose.connections[0] != undefined &&
+    mongoose.connections[0].readyState
+  ) {
     // Use current db connection
     return handler(req, res);
   }
