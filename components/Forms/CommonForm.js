@@ -1,6 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CommonForm.css";
+
+const dualDegreeMTechCourses = [
+  { title: "Computer Science and Engineering", type: "checkbox", name: "CSE" },
+  { title: "Mathematics & Computing", type: "checkbox", name: "MNC" },
+  { title: "Applied Geology", type: "checkbox", name: "ag" },
+  { title: "Applied Geophysics", type: "checkbox", name: "gp" },
+];
+
+import Category from "./Category";
+
 function CommonForm() {
+  // s2 = Section2 [5-Year Dual Degree/ Integrated M.Tech Programs]
+  const [s2, setS2] = useState({
+    CSE: false,
+    MNC: false,
+    ag: false,
+    gp: false,
+  });
+
   return (
     <div className="container">
       <form>
@@ -204,60 +222,13 @@ function CommonForm() {
           </div>
         </div>
 
-        <div>
-          <div className="heading-2">
-            <h4>
-              <u>5-Year Dual Degree/ Integrated M.Tech Programs</u>
-            </h4>
-            <p>Admitted through JEE (Advanced)</p>
-          </div>
-          <div className="container">
-            <div className="row">
-              <div className="col-8">
-                <div className="row">
-                  <div className="col-8">
-                    <h5>COURSES</h5>
-                  </div>
-                  <div className="col-4">
-                    <h6>SELECT</h6>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Computer Science and Engineering</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="CSE" id="CSE" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Mathematics & Computing</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="mnc" id="mnc" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Applied Geology</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="AGl" id="AGl" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Applied Geophysics</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="AGP" id="AGP" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Category
+          heading={"5-Year Dual Degree/ Integrated M.Tech Programs"}
+          details={"Admitted through JEE (Advanced)"}
+          data={dualDegreeMTechCourses}
+          setData={setS2}
+        />
+
         <div>
           <div className="heading-2">
             <h4>

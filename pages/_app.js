@@ -24,6 +24,10 @@ import Router from "next/router";
 import PageChange from "components/PageChange/PageChange.js";
 
 import "assets/css/nextjs-material-dashboard.css?v=1.1.0";
+// import "./../assets/css/login.css";
+
+// import "../assets/scss/index.scss";
+
 import connectDb from "./api/controllers/connectDb";
 
 export default class MyApp extends App {
