@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin-top: 2%;
+}
+
+.heading {
+  text-align: center;
+}
+
+.input_type1 {
+  display: flex;
+}
+.label {
+  width: 40%;
+  background-color: grey;
+  /* flex-grow: 1; */
+}
+input {
+}
