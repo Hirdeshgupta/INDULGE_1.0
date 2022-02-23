@@ -38,19 +38,18 @@ export default function Footer(props) {
             </ListItem>
           </List>
         </div>
-        <p className={classes.right}>
+        {/* <p className={classes.right}>
           <span>
             &copy; {1900 + new Date().getYear()}{" "}
             <a
-              href="https://www.creative-tim.com?ref=njsmd-footer"
+              href="https://www.iitism.ac.in"
               target="_blank"
               className={classes.a}
             >
-              Creative Tim
+              IIT ISM DHANBAD
             </a>
-            , made with love for a better web
           </span>
-        </p>
+        </p> */}
       </div>
     </footer>
   );

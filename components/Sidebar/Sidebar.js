@@ -1,10 +1,8 @@
-/*eslint-disable*/
 import React from "react";
 import classNames from "classnames";
 import PropTypes from "prop-types";
 import Link from "next/link";
 import { useRouter } from "next/router";
-// @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import Hidden from "@material-ui/core/Hidden";
@@ -83,18 +81,35 @@ export default function Sidebar(props) {
     </List>
   );
   var brand = (
-    <div className={classes.logo}>
+    <div
+      className={classes.logo}
+      // style={{ display: "flex", justifyContent: "center" }}
+    >
       <a
-        href="https://www.creative-tim.com?ref=njsmd-sidebar"
+        href="https://www.iitism.ac.in/"
         className={classNames(classes.logoLink, {
           [classes.logoLinkRTL]: props.rtlActive,
         })}
         target="_blank"
       >
-        <div className={classes.logoImage}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <img src={logo} alt="logo" className={classes.img} />
         </div>
-        {logoText}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <div>{logoText}</div>
+        </div>
       </a>
     </div>
   );
@@ -112,7 +127,7 @@ export default function Sidebar(props) {
           }}
           onClose={props.handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true,
           }}
         >
           {brand}

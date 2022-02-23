@@ -15,8 +15,8 @@ import adminRoutes from "../routes/adminRoutes";
 
 import styles from "assets/jss/nextjs-material-dashboard/layouts/adminStyle.js";
 
-import bgImage from "assets/img/sidebar-2.jpg";
-import logo from "assets/img/reactlogo.png";
+import bgImage from "assets/img/iitism_bg.jpg";
+import logo from "assets/img/IITISM_LOGO.png";
 
 let ps;
 
@@ -79,7 +79,7 @@ export default function Admin({ children, ...rest }) {
     <div className={classes.wrapper}>
       <Sidebar
         routes={adminRoutes}
-        logoText={"Creative Tim"}
+        logoText={"IIT ISM DHANBAD"}
         logo={logo}
         image={image}
         handleDrawerToggle={handleDrawerToggle}

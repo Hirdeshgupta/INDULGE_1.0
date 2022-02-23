@@ -95,15 +95,14 @@ const sidebarStyle = (theme) => ({
   },
   logoImage: {
     width: "30px",
-    display: "inline-block",
+    // display: "inline-block",
     maxHeight: "30px",
-    marginLeft: "10px",
-    marginRight: "15px",
+    // marginLeft: "10px",
+    // marginRight: "15px",
   },
   img: {
-    width: "35px",
+    width: "70px",
     top: "22px",
-    position: "absolute",
     verticalAlign: "middle",
     border: "0",
   },
@@ -125,7 +124,7 @@ const sidebarStyle = (theme) => ({
       content: '""',
       display: "block",
       background: blackColor,
-      opacity: ".8",
+      opacity: ".2",
     },
   },
   list: {
