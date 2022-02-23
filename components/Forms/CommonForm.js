@@ -8,6 +8,289 @@ const dualDegreeMTechCourses = [
   { title: "Applied Geophysics", type: "checkbox", name: "gp" },
 ];
 
+const fields = [
+  {
+    heading: "4-Year B.Tech Programs",
+    details: "Admitted through JEE (Advanced)",
+    data: [
+      {
+        title: "Chemical Engineering",
+        type: "checkbox",
+        name: "chemical",
+      },
+      {
+        title: "Civil Engineering",
+        type: "checkbox",
+        name: "civil",
+      },
+      {
+        title: "Computer Science and Engineering",
+        type: "checkbox",
+        name: "cse",
+      },
+      {
+        title: "Electrical Engineering",
+        type: "checkbox",
+        name: "ee",
+      },
+      {
+        title: "Electronics & Communication Engineering",
+        type: "checkbox",
+        name: "ece",
+      },
+      {
+        title: "Engineering Physics",
+        type: "checkbox",
+        name: "ep",
+      },
+      {
+        title: "Environmental Engineering",
+        type: "checkbox",
+        name: "env",
+      },
+      {
+        title: "Mechanical Engineering",
+        type: "checkbox",
+        name: "mech",
+      },
+      {
+        title: "Mineral & Metallurgical Engineering",
+        type: "checkbox",
+        name: "fmme",
+      },
+      {
+        title: "Mining Engineering",
+        type: "checkbox",
+        name: "me",
+      },
+      {
+        title: "Mining Machinery Engineering",
+        type: "checkbox",
+        name: "mme",
+      },
+      {
+        title: "Petroleum Engineering",
+        type: "checkbox",
+        name: "pe",
+      },
+    ],
+  },
+
+  {
+    heading: "5-Year Dual Degree/ Integrated M.Tech Programs",
+    details: "Admitted through JEE (Advanced)",
+    data: [
+      {
+        title: "Computer Science and Engineering",
+        type: "checkbox",
+        name: "CSE",
+      },
+      { title: "Mathematics & Computing", type: "checkbox", name: "MNC" },
+      { title: "Applied Geology", type: "checkbox", name: "AG" },
+      { title: "Applied Geophysics", type: "checkbox", name: "GP" },
+    ],
+  },
+
+  {
+    heading: "Skill Based Hiring",
+    details:
+      " Students with certified technical expertise in the following skills (from Coursera, Udemy etc.)",
+    data: [
+      {
+        title: "C, C++, Java, Python etc.",
+        type: "checkbox",
+        name: "proglang",
+      },
+      {
+        title: "Full Stack Development (Frontend/Backend)",
+        type: "checkbox",
+        name: "fullstack",
+      },
+      {
+        title: "AI/ ML/DL, Data Science",
+        type: "checkbox",
+        name: "machinelearning",
+      },
+      {
+        title: "Business/ Data Analytics, Product Management",
+        type: "checkbox",
+        name: "prodmanagement",
+      },
+      {
+        title: "Other Skills(Please Specify)",
+        type: "text",
+        name: "otherskills",
+      },
+    ],
+  },
+
+  {
+    heading: "3-Year MSc.Tech Programs",
+    details: "Admitted through JAM",
+    data: [
+      {
+        title: "Applied Geology",
+        type: "checkbox",
+        name: "agl",
+      },
+      {
+        title: "Applied Geophysics",
+        type: "checkbox",
+        name: "agp",
+      },
+      {
+        title: "Chemical Engineering",
+        type: "checkbox",
+        name: "chemical",
+      },
+      {
+        title: "Civil Engineering",
+        type: "checkbox",
+        name: "civil",
+      },
+      {
+        title: "Computer Science and Engineering",
+        type: "checkbox",
+        name: "cse",
+      },
+    ],
+  },
+
+  {
+    heading: "2-Year M.Tech Programs",
+    details: "Admitted through GATE",
+    data: [
+      {
+        title: "Applied Geology",
+        type: "checkbox",
+        name: "agl",
+      },
+      {
+        title: "Applied Geophysics",
+        type: "checkbox",
+        name: "agp",
+      },
+      {
+        title: "Chemical Engineering",
+        type: "checkbox",
+        name: "chemical",
+      },
+      {
+        title: "Civil Engineering",
+        type: "checkbox",
+        name: "civil",
+      },
+      {
+        title: "Computer Science and Engineering",
+        type: "checkbox",
+        name: "cse",
+      },
+      {
+        title: "Data Analytics",
+        type: "checkbox",
+        name: "dataanalyst",
+      },
+      {
+        title: "Electrical Engineering",
+        type: "checkbox",
+        name: "ee",
+      },
+      {
+        title: "Electronics & Communication Engineering",
+        type: "checkbox",
+        name: "ece",
+      },
+      {
+        title: "Engineering Physics",
+        type: "checkbox",
+        name: "ep",
+      },
+      {
+        title: "Environmental Engineering",
+        type: "checkbox",
+        name: "env",
+      },
+      {
+        title: "Mechanical Engineering",
+        type: "checkbox",
+        name: "mech",
+      },
+      {
+        title: "Mineral & Metallurgical Engineering",
+        type: "checkbox",
+        name: "mle",
+      },
+      {
+        title: "Mining Engineering",
+        type: "checkbox",
+        name: "me",
+      },
+      {
+        title: "Mining Machinery Engineering",
+        type: "checkbox",
+        name: "mme",
+      },
+      {
+        title: "Petroleum Engineering",
+        type: "checkbox",
+        name: "pe",
+      },
+    ],
+  },
+  {
+    heading: "2-Year MBA Programs",
+    details: "Admitted through CAT",
+    data: [
+      {
+        title: "Business Analytics",
+        type: "checkbox",
+        name: "ba",
+      },
+      {
+        title: "Finance",
+        type: "checkbox",
+        name: "finance",
+      },
+      {
+        title: "Human Resources",
+        type: "checkbox",
+        name: "hr",
+      },
+      {
+        title: "Marketing",
+        type: "checkbox",
+        name: "marketing",
+      },
+      {
+        title: "Operations",
+        type: "checkbox",
+        name: "operations",
+      },
+    ],
+  },
+  {
+    heading: "2-Year M.Sc. Programs",
+    details: "Admitted through JAM",
+    data: [
+      {
+        title: "Chemistry",
+        type: "checkbox",
+        name: "chem",
+      },
+      {
+        title: "Mathematics and Computing",
+        type: "checkbox",
+        name: "mnc",
+      },
+      {
+        title: "Physics",
+        type: "checkbox",
+        name: "physics",
+      },
+    ],
+  },
+];
+
 import Category from "./Category";
 
 function CommonForm() {
@@ -99,521 +382,16 @@ function CommonForm() {
             requirement)
           </p>
         </div>
-        <div>
-          <div className="heading-2">
-            <h4>
-              <u>4-Year B.Tech Programs</u>
-            </h4>
-            <p>Admitted through JEE (Advanced)</p>
-          </div>
-          <div className="container">
-            <div className="row">
-              <div className="col-8">
-                <div className="row">
-                  <div className="col-8">
-                    <h5>COURSES</h5>
-                  </div>
-                  <div className="col-4">
-                    <h6>SELECT</h6>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>
-                      <label for="chemical">Chemical Engineering</label>
-                    </p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="Chemical" id="chemical" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>
-                      <label for="">Civil Engineering</label>
-                    </p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="Civil" id="Civil" />
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-8">
-                    <p>Computer Science and Engineering</p>
-                  </div>
-                  <div class="col-4">
-                    <input type="checkbox" name="CSE" id="CSE" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Electrical Engineering</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="EE" id="EE" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Electronics & Communication Engineering</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="ECE" id="ECE" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Engineering Physics</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="EP" id="EP" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Environmental Engineering</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="Env" id="Env" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Mechanical Engineering </p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="mech" id="mech" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Mineral & Metallurgical Engineering </p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="mme" id="mme" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Mining Engineering </p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="me" id="me" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Mining Machinery Engineering</p>
-                  </div>
-                  <div class="col-4">
-                    <input type="checkbox" name="min_mac" id="min_mac" />
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-8">
-                    <p>Petroleum Engineering</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="petro" id="petro" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <Category
-          heading={"5-Year Dual Degree/ Integrated M.Tech Programs"}
-          details={"Admitted through JEE (Advanced)"}
-          data={dualDegreeMTechCourses}
-          setData={setS2}
-        />
-
-        <div>
-          <div className="heading-2">
-            <h4>
-              <u>Skill Based Hiring</u>
-            </h4>
-            <p>
-              Students with certified technical expertise in the following
-              skills (from Coursera, Udemy etc.)
-            </p>
-          </div>
-          <div className="container">
-            <div className="row">
-              <div className="col-8">
-                <div className="row">
-                  <div className="col-8">
-                    <h5>COURSES</h5>
-                  </div>
-                  <div className="col-4">
-                    <h6>SELECT</h6>
-                  </div>
-                </div>
-                <div className="row">
-                  <div clasName="col-8">
-                    <p>C, C++, Java, Python etc.</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="CSE" id="CSE" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Full Stack Development (Frontend/Backend)</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="mnc" id="mnc" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>AI/ ML/DL, Data Science</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="AGl" id="AGl" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Business/ Data Analytics, Product Management</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="AGP" id="AGP" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Other Skills(Please Specify)</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="text" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div className="heading-2">
-            <h4>
-              <u>3-Year MSc.Tech Programs</u>
-            </h4>
-            <p>Admitted through JAM</p>
-          </div>
-          <div className="container">
-            <div className="row">
-              <div className="col-8">
-                <div className="row">
-                  <div className="col-8">
-                    <h5>COURSES</h5>
-                  </div>
-                  <div className="col-4">
-                    <h6>SELECT</h6>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Applied Geology</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="AGL" id="AGl" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Applied Geophysics</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="AGP" id="AGP" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>
-                      <label for="chemical">Chemical Engineering</label>
-                    </p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="Chemical" id="chemical" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>
-                      <label for="">Civil Engineering</label>
-                    </p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="Civil" id="Civil" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Computer Science and Engineering</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="CSE" id="CSE" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div className="heading-2">
-            <h4>
-              <u>2-Year M.Tech Programs</u>
-            </h4>
-            <p>Admitted through GATE</p>
-          </div>
-          <div className="container">
-            <div className="row">
-              <div className="col-8">
-                <div className="row">
-                  <div className="col-8">
-                    <h5>COURSES</h5>
-                  </div>
-                  <div className="col-4">
-                    <h6>SELECT</h6>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Applied Geology</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="AGL" id="AGl" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Applied Geophysics</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="AGP" id="AGP" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Chemical Engineering</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="chemical" id="chemical" />
-                  </div>
-                </div>
-                <div clasName="row">
-                  <div className="col-8">
-                    <p>Civil Engineering</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="civil" id="civil" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Computer Science and Engineering</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="CSE" id="CSE" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Data Analytics</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="AGP" id="AGP" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Electrical Engineering</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="EE" id="EE" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Electronics & Communication Engineering</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="ECE" id="ECE" />{" "}
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Engineering Physics</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="EP" id="EP" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Environmental Engineering</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="Env" id="Env" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Mechanical Engineering </p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="mech" id="mech" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Mineral & Metallurgical Engineering </p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="mme" id="mme" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Mining Engineering </p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="me" id="me" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Mining Machinery Engineering</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="min_mac" id="min_mac" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Petroleum Engineering</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="petro" id="petro" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div className="heading-2">
-            <h4>
-              <u>2-Year MBA Programs</u>
-            </h4>
-            <p>Admitted through CAT</p>
-          </div>
-          <div className="container">
-            <div className="row">
-              <div className="col-8">
-                <div className="row">
-                  <div className="col-8">
-                    <h5>COURSES</h5>
-                  </div>
-                  <div className="col-4">
-                    <h6>SELECT</h6>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Business Analytics</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="AGL" id="AGl" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Finance</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="AGP" id="AGP" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Human Resources</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="chemical" id="chemical" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Marketing</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="civil" id="civil" />
-                  </div>
-                </div>
-                <div class="row">
-                  <div className="col-8">
-                    <p>Operations</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="CSE" id="CSE" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div className="heading-2">
-            <h4>
-              <u>2-Year M.Sc. Programs</u>
-            </h4>
-            <p>Admitted through JAM</p>
-          </div>
-          <div className="container">
-            <div className="row">
-              <div className="col-8">
-                <div className="row">
-                  <div className="col-8">
-                    <h5>COURSES</h5>
-                  </div>
-                  <div className="col-4">
-                    <h6>SELECT</h6>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Chemistry</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="AGL" id="AGl" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Mathematics & Computing</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="AGP" id="AGP" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-8">
-                    <p>Physics</p>
-                  </div>
-                  <div className="col-4">
-                    <input type="checkbox" name="chemical" id="chemical" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        {fields.map((field, index) => (
+          <Category
+            id={index}
+            heading={field.heading}
+            details={field.details}
+            data={field.data}
+            setData={setS2}
+          />
+        ))}
 
         <div className="heading">
           <h1>SELECTION PROCEDURE</h1>
