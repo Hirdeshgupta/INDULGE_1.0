@@ -1,20 +1,80 @@
-const InputBox = ({ title, type, name, setData }) => {
-  const handleChange = (e) => {
+import { useEffect } from "react";
+
+const InputBox = ({ title, type, name, parentName, setData }) => {
+  useEffect(() => {
     switch (type) {
       case "checkbox":
         setData((prev) => {
-          let tmp = {};
-          tmp[name] = e.target.checked;
+          let tmp;
+          if (prev && prev[parentName]) {
+            tmp = prev[parentName];
+            if (!tmp[name]) {
+              tmp[name] = null;
+            }
+          } else {
+            tmp = {};
+            tmp[name] = null;
+          }
 
-          return { ...prev, ...tmp };
+          let update = {};
+          update[parentName] = tmp;
+
+          return { ...prev, ...update };
         });
         break;
       default:
         setData((prev) => {
-          let tmp = {};
-          tmp[name] = e.target.value;
+          let tmp;
+          if (prev && prev[parentName]) {
+            tmp = prev[parentName];
+            if (!tmp[name]) {
+              tmp[name] = null;
+            }
+          } else {
+            tmp = {};
+            tmp[name] = null;
+          }
 
-          return { ...prev, ...tmp };
+          let update = {};
+          update[parentName] = tmp;
+
+          return { ...prev, ...update };
+        });
+        break;
+    }
+  }, []);
+
+  const handleChange = (e) => {
+    switch (type) {
+      case "checkbox":
+        setData((prev) => {
+          let tmp;
+          if (prev && prev[parentName]) {
+            tmp = prev[parentName];
+          } else {
+            tmp = {};
+          }
+
+          tmp[name] = e.target.checked;
+          let update = {};
+          update[parentName] = tmp;
+
+          return { ...prev, ...update };
+        });
+        break;
+      default:
+        setData((prev) => {
+          let tmp;
+          if (prev && prev[parentName]) {
+            tmp = prev[parentName];
+          } else {
+            tmp = {};
+          }
+          tmp[name] = e.target.value;
+          let update = {};
+          update[parentName] = tmp;
+
+          return { ...prev, ...update };
         });
         break;
     }

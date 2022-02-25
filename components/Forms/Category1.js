@@ -1,6 +1,6 @@
 import InputBox from "./InputBox";
 
-const Category = ({ heading, details, data, setData }) => {
+const Category1 = ({ heading, details, name, data, setData }) => {
   return (
     <div>
       <div className="heading-2">
@@ -27,6 +27,7 @@ const Category = ({ heading, details, data, setData }) => {
                 title={d.title}
                 type={d.type}
                 name={d.name}
+                parentName={name}
                 setData={setData}
               />
             ))}
@@ -37,4 +38,4 @@ const Category = ({ heading, details, data, setData }) => {
   );
 };
 
-export default Category;
+export default Category1;

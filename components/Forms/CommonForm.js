@@ -11,6 +11,7 @@ const dualDegreeMTechCourses = [
 const fields = [
   {
     heading: "4-Year B.Tech Programs",
+    name: "btechPrograms",
     details: "Admitted through JEE (Advanced)",
     data: [
       {
@@ -78,6 +79,7 @@ const fields = [
 
   {
     heading: "5-Year Dual Degree/ Integrated M.Tech Programs",
+    name: "fiveYearPrograms",
     details: "Admitted through JEE (Advanced)",
     data: [
       {
@@ -93,6 +95,7 @@ const fields = [
 
   {
     heading: "Skill Based Hiring",
+    name: "skillBasedHiring",
     details:
       " Students with certified technical expertise in the following skills (from Coursera, Udemy etc.)",
     data: [
@@ -126,6 +129,7 @@ const fields = [
 
   {
     heading: "3-Year MSc.Tech Programs",
+    name: "threeYearMSc",
     details: "Admitted through JAM",
     data: [
       {
@@ -158,6 +162,7 @@ const fields = [
 
   {
     heading: "2-Year M.Tech Programs",
+    name: "twoYearMTech",
     details: "Admitted through GATE",
     data: [
       {
@@ -237,8 +242,10 @@ const fields = [
       },
     ],
   },
+
   {
     heading: "2-Year MBA Programs",
+    name: "twoYearMBA",
     details: "Admitted through CAT",
     data: [
       {
@@ -270,6 +277,7 @@ const fields = [
   },
   {
     heading: "2-Year M.Sc. Programs",
+    name: "twoYearMSc",
     details: "Admitted through JAM",
     data: [
       {
@@ -291,15 +299,12 @@ const fields = [
   },
 ];
 
-import Category from "./Category";
+import Category1 from "./Category1";
 
 function CommonForm() {
   // s2 = Section2 [5-Year Dual Degree/ Integrated M.Tech Programs]
-  const [s2, setS2] = useState({
-    CSE: false,
-    MNC: false,
-    ag: false,
-    gp: false,
+  const [data, setData] = useState({
+    twoYearMSc: { chem: null, mnc: "abcd", physics: null },
   });
 
   return (
@@ -384,12 +389,13 @@ function CommonForm() {
         </div>
 
         {fields.map((field, index) => (
-          <Category
+          <Category1
             id={index}
             heading={field.heading}
             details={field.details}
             data={field.data}
-            setData={setS2}
+            name={field.name}
+            setData={setData}
           />
         ))}
 
